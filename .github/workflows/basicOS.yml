@@ -46,7 +46,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         repository: Pravina030821/UOBHidde
-        token: ${{ secrets.Devops }}
+        token: ${{ secrets.DEVOPS }}
 
     # this prints out the hidden files
     - name: print out hidden things
