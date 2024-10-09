@@ -4,6 +4,12 @@ on:
   push:
     branches: [main]
 
-Jobs: 
+jobs: 
   builds:
     runs-on: Ubuntu-16.04
+
+    steps: 
+      - name: greeting steps
+        run:
+          echo "Hello there"
+      
