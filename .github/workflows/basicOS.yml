@@ -12,4 +12,11 @@ jobs:
       - name: greeting steps
         run:
           echo "Hello there"
+
+      - name: Checkout my codes
+        uses: action/checkout@v4
+      - name: print content 
+        run: 
+          ls 
+          
       
