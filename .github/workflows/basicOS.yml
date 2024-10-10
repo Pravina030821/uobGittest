@@ -14,11 +14,6 @@ jobs:
     - name: greeting steps
       run:
         echo "Hello there"
-    - name: discord
-         uses: sebastianpopp/discord-action@releases/v2
-         with:
-           webhook: ${{ secrets.UOBSECRET }}
-           message: ${{ github.repository }} has been successfullly deployed.
            
     - name: Checkout my codes
       uses: actions/checkout@v4
@@ -61,6 +56,12 @@ jobs:
         ls
         cd hiddentext
         ls
+    - name: discord
+         uses: sebastianpopp/discord-action@releases/v2
+         with:
+           webhook: ${{ secrets.UOBSECRET }}
+           message: ${{ github.repository }} has been successfullly deployed.
+    
          
    
               
