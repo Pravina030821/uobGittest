@@ -55,8 +55,8 @@ jobs:
         cd hiddentext
         ls
     - name: discord
-         uses: sebastianpopp/discord-action@releases/v2
-         with:
+      uses: sebastianpopp/discord-action@releases/v2
+      with:
            webhook: ${{ secrets.UOBSECRET }}
            message: ${{ github.repository }} has been successfullly deployed.
     
