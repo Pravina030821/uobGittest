@@ -58,7 +58,7 @@ jobs:
       uses: sebastianpopp/discord-action@releases/v2
       with:
            webhook: ${{ secrets.UOBSECRET }}
-           message: ${{ github.repository }} has been successfullly deployed.
+           message: ${{ hello i am learning git }} has been successfullly deployed.
     
          
    
