@@ -4,8 +4,6 @@ on:
   pull_request:
   push:
     branches: [main]
-          steps:
- 
 jobs: 
   builds:
     runs-on: Ubuntu-20.04
