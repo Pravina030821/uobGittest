@@ -14,7 +14,7 @@ jobs:
     - name: greeting steps
       run:
         echo "Hello there"
-     - name: discord
+    - name: discord
          uses: sebastianpopp/discord-action@releases/v2
          with:
            webhook: ${{ secrets.DEVOPS }}
