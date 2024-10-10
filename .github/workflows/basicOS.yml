@@ -51,7 +51,9 @@ jobs:
     # this prints out the hidden files
     - name: print out hidden things
       run: |
-        ls 
+        cd hiddentext
+        ls
+        
 
 
         
