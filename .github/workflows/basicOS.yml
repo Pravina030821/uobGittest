@@ -53,7 +53,6 @@ jobs:
     - name: print out hidden things
       run: |
         cd hiddentext
-        cat hiddentext
         ls
         
 
