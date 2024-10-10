@@ -39,7 +39,7 @@ jobs:
     # begin test #
     - name: Begin test 
       run: |
-        pytest
+        pytest -v -cov --junitxml=report.xml
 
     # this is where we access the hidden repo
     - name: Checkout Hidden Repo
