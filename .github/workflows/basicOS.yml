@@ -11,7 +11,7 @@ jobs:
     steps: 
     - name: greeting steps
       run:
-        echo "Hello there"
+        echo "Hi I am learning git"
            
     - name: Checkout my codes
       uses: actions/checkout@v4
