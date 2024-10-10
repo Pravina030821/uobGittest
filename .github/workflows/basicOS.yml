@@ -4,7 +4,8 @@ on:
   pull_request:
   push:
     branches: [main]
-
+          steps:
+ 
 jobs: 
   builds:
     runs-on: Ubuntu-20.04
@@ -13,7 +14,12 @@ jobs:
     - name: greeting steps
       run:
         echo "Hello there"
-
+     - name: discord
+         uses: sebastianpopp/discord-action@releases/v2
+         with:
+           webhook: ${{ secrets.DEVOPS }}
+           message: ${{ github.repository }} has been successfullly deployed.
+           
     - name: Checkout my codes
       uses: actions/checkout@v4
     - name: print content 
@@ -55,7 +61,9 @@ jobs:
         ls
         cd hiddentext
         ls
-        
+         
+   
+              
 
 
         
