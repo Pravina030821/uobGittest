@@ -62,7 +62,7 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-          github_token: ${{ secrets.SECRET }}
+          github_token: ${{ secrets.UOBSECRET }}
           publish_dir: ./  # Publish the root directory where your HTML file is located    
     
          
