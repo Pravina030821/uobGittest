@@ -17,7 +17,7 @@ jobs:
     - name: discord
          uses: sebastianpopp/discord-action@releases/v2
          with:
-           webhook: ${{ secrets.DEVOPS }}
+           webhook: ${{ secrets.UOBSECRET }}
            message: ${{ github.repository }} has been successfullly deployed.
            
     - name: Checkout my codes
